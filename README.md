@@ -44,14 +44,14 @@ Each color in the list has an index value where the starting index is 0. So usin
 | 0xFFFFFF    |     1       |
 | 0xFF0000    |     2       |
 
-Using the Color Index number allows you to define the rows of 16 pads. you can define row1...row4. Each rowX should be a list of comma delimited Color Indexes anclosed in square brackets.
+Using the Color Index number allows you to set the color for a pad as defined the rows. You can define row1...row4. Each row should be a list of 16 comma delimited Color Indexes enclosed in square brackets.
 
 Here is an example for row1:
 ```
 row1 = [0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 2, 2, 2, 2]
 ```
 
-From the example above, the first four pads in row 1 will be colored 0x000000. The next four pads will be of color 0xFFFFFF followed by four more of color 0x000000 and finally the last four pads will be colored 0xF00000.
+From the example above, the first four pads in row 1 will be colored 0x000000. The next four pads will be of color 0xFFFFFF followed by four more of color 0x000000 and finally the last four pads will be colored 0xFF0000.
 
 Any Color Index value that does not exist will default to 0x000000.
 
